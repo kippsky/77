@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>TVBox 接口搜索与测试</title>
+	<link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+	<header>
+		<h1>TVBox 接口搜索与测试</h1>
+	</header>
+	<main>
+		<section class="controls">
+			<button id="btn-refresh">搜索接口</button>
+			<label><input type="checkbox" id="seed-only" /> 仅使用内置种子</label>
+			<input type="text" id="custom-url" placeholder="粘贴自定义接口 URL" />
+			<button id="btn-add">添加</button>
+			<button id="btn-test-selected">测试选中</button>
+			<button id="btn-test-all">测试全部</button>
+		</section>
+
+		<section class="layout">
+			<div class="col">
+				<h2>接口列表</h2>
+				<ul id="url-list"></ul>
+			</div>
+			<div class="col">
+				<h2>测试结果</h2>
+				<div id="results"></div>
+			</div>
+		</section>
+
+		<section class="adb">
+			<h2>ADB 辅助（可选）</h2>
+			<div id="adb-status">检查中...</div>
+			<div id="adb-panel" style="display:none;">
+				<button id="btn-list-devices">列出设备</button>
+				<select id="adb-devices"></select>
+				<button id="btn-launch-tvbox">启动 TVBox</button>
+				<button id="btn-paste-into-device">将选中 URL 输入到设备</button>
+			</div>
+		</section>
+	</main>
+	<script src="/static/app.js"></script>
+</body>
+</html>
+

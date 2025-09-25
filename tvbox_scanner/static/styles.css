@@ -1,0 +1,25 @@
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif; margin: 0; padding: 0; }
+header { background: #0f172a; color: #fff; padding: 14px 18px; }
+main { padding: 16px; }
+
+.controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.col { border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; }
+
+#url-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+#url-list li { display: flex; gap: 8px; align-items: center; padding: 6px; border-bottom: 1px dashed #e2e8f0; }
+#url-list li button { margin-left: auto; }
+#url-list li button + button { margin-left: 8px; }
+
+.result { border: 1px solid #e2e8f0; border-radius: 6px; padding: 8px; margin-bottom: 8px; }
+.result.ok { border-color: #22c55e; }
+.result.bad { border-color: #ef4444; }
+.result .url { font-weight: 600; margin-bottom: 4px; }
+.result .err { color: #ef4444; }
+
+.adb { margin-top: 20px; }
+
+@media (max-width: 900px) {
+	.layout { grid-template-columns: 1fr; }
+}
+
