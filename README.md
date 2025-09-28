@@ -1,1 +1,13 @@
-c3NyOi8vTVRjeUxqRXdOQzR4TWpjdU1qQTRPamd3T1RrNmIzSnBaMmx1T21GbGN5MHlOVFl0WTJaaU9uQnNZV2x1T2xwVmJGaE5SVkoxWVhwWk5VNUVWVEJhVkZwMVZUTmtNV016UWpKUFZWSjBWWHBKZDAxWVVsSk5SVkV2UDI5aVpuTndZWEpoYlQwCnNzcjovL01UY3lMakV3TkM0MU1DNHhNREk2T0RBNU9UcHZjbWxuYVc0NllXVnpMVEkxTmkxalptSTZjR3hoYVc0NldsVnNXRTFGVW5WaGVsazFUa1JWTUZwVVduVlZNMlF4WXpOQ01rOVZVblJWZWtsM1RWaFNVazFGVVM4X2IySm1jM0JoY21GdFBRCg==
+# 大宗交易进销存
+
+运行:
+
+```bash
+pip install -r requirements.txt
+streamlit run app/app.py
+```
+
+数据存储位置:
+- 采购: `/workspace/data/purchase.parquet`
+- 销售: `/workspace/data/sales.parquet`
+- 导出: `/workspace/export/`
